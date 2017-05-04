@@ -1,1 +1,1 @@
-# Solutions for the problems from the basics exams
+# Solutions for the problems from the basic exams
