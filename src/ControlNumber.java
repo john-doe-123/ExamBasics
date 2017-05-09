@@ -16,7 +16,7 @@ public class ControlNumber {
         int sum = 0;
         int moves = 0;
 
-        mainloop:
+
         for (int firstNumber = 1; firstNumber <= n; firstNumber++) {
 
 
