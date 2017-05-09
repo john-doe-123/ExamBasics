@@ -26,10 +26,14 @@ public class ControlNumber {
                 moves++;
 
                 if (sum >= controlNumber) {
-                    break mainloop;
+                    break;
                 }
 
 
+            }
+
+            if (sum >= controlNumber) {
+                break;
             }
 
         }
