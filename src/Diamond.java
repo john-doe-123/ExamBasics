@@ -10,6 +10,8 @@ public class Diamond {
         Scanner userInput = new Scanner(System.in);
         int userNumber = Integer.parseInt(userInput.nextLine());
 
+        int total = 5 * userNumber;
+
 
         // Top of the diamond
         System.out.printf("%1$s%2$s%1$s",
@@ -17,7 +19,7 @@ public class Diamond {
                 new String(new char[userNumber * 3]).replace('\0', '*'));
         System.out.println();
 
-        for (int k = userNumber - 1; k > 0 ; k--) {
+        for (int k = userNumber - 1; k > 0; k--) {
 
             System.out.printf("%1$s*%2$s*%1$s",
                     new String(new char[k]).replace('\0', '.'),
@@ -37,6 +39,11 @@ public class Diamond {
                     new String(new char[5 * userNumber - 2 - 2 * i]).replace('\0', '.'));
             System.out.println();
         }
+
+        // Last row
+        System.out.printf("%1$s%2$s%1$s",
+                new String(new char[userNumber * 2 + 1]).replace('\0', '.'),
+                new String(new char[total - (2 * (userNumber * 2 + 1))]).replace('\0', '*'));
 
     }
 }
