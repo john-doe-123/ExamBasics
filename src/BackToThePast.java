@@ -23,9 +23,9 @@ public class BackToThePast {
 //            System.out.printf("Year %d Age %d Money %.2f %n", 1800 + i, age, inheritedMoney);
 
             if ((1800 + i) % 2 == 0) {
-                inheritedMoney -= 12000;
+                inheritedMoney -= 12_000;
             } else {
-                inheritedMoney -= 12000 + (50 * age);
+                inheritedMoney -= 12_000 + (50 * age);
             }
 
             age++;
