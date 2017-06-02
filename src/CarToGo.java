@@ -20,14 +20,14 @@ public class CarToGo {
 
             carClass = "Economy class";
 
-            switch (season) {
+            switch (season.toLowerCase()) {
 
-                case ("Summer"):
-                    rentPrice = budget * 0.35;
+                case ("summer"):
+                    rentPrice = budget * (35 / 100.0);
                     carType = "Cabrio";
                     break;
-                case ("Winter"):
-                    rentPrice = budget * 0.65;
+                case ("winter"):
+                    rentPrice = budget * (65 / 100.0);
                     carType = "Jeep";
                     break;
             }
@@ -35,21 +35,21 @@ public class CarToGo {
 
             carClass = "Compact class";
 
-            switch (season) {
+            switch (season.toLowerCase()) {
 
-                case ("Summer"):
-                    rentPrice = budget * 0.45;
+                case ("summer"):
+                    rentPrice = budget * (45 / 100.0);
                     carType = "Cabrio";
                     break;
-                case ("Winter"):
-                    rentPrice = budget * 0.80;
+                case ("winter"):
+                    rentPrice = budget * (80 / 100.0);
                     carType = "Jeep";
                     break;
             }
-        } else {
+        } else if (budget > 500){
 
             carClass = "Luxury class";
-            rentPrice = budget * 0.90;
+            rentPrice = budget * (90 / 100.0);
             carType = "Jeep";
         }
 
