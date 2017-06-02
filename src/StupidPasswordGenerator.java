@@ -35,20 +35,12 @@ public class StupidPasswordGenerator {
                                         fifthSymbol);
 
                                 System.out.print(password);
+
                             }
-
-
-                        }       
-                
-
+                        }
                     }
-
                 }
-
             }
-
         }
-
-
     }
 }
