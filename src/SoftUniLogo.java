@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by pesho on 6/1/2017.
  */
-public class SoftuniLogo {
+public class SoftUniLogo {
 
     public static void main(String[] args) {
 
