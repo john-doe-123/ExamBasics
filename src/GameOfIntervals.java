@@ -45,11 +45,10 @@ public class GameOfIntervals {
                 invalidNumbers++;
                 score /= 2;
             }
+
+            totalNumbers++;
         }
 
-        totalNumbers = zeroToNine + tenToNineteen +
-                twentyToTwentyNine + thirtyToThirtyNine +
-                fortyToFifty + invalidNumbers;
 
         System.out.printf("%.2f%n", score);
         System.out.printf("From 0 to 9: %.2f%%%n", (1.0 * zeroToNine / totalNumbers) * 100);
